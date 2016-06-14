@@ -10,7 +10,7 @@ IMG="perl:latest"
 
 SCRIPTS_DIR=/home/okuda/data/megap_scripts
 
-docker run \
+/bin/docker run \
     --volumes-from $CONTAINER_ID \
     -v $SCRIPTS_DIR:/scripts \
     --rm \

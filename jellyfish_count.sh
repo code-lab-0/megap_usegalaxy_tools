@@ -11,7 +11,7 @@ IMG="biodckrdev/jellyfish:latest"
 touch $OUTPUT
 chmod 777 $OUTPUT
 
-docker run \
+/bin/docker run \
     --volumes-from $CONTAINER_ID \
     --rm \
     $IMG \

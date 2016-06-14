@@ -7,7 +7,7 @@ CONTAINER_ID="${CONTAINER_ID##*/}"
 
 IMG="biodckrdev/jellyfish:latest"
 
-docker run \
+/bin/docker run \
     --volumes-from $CONTAINER_ID \
     --rm \
     $IMG \

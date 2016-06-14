@@ -10,7 +10,7 @@ IMG="genomicpariscentre/bowtie2:latest"
 
 MEGAPDATA_DIR=/home/okuda/data/megap_data
 
-docker run \
+/bin/docker run \
     --volumes-from $CONTAINER_ID \
     -v $MEGAPDATA_DIR:/megapdata \
     --rm \
